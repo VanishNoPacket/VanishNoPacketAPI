@@ -20,7 +20,7 @@ package org.kitteh.vanish.api;
 
 import org.kitteh.vanish.api.player.PlayerHandler;
 
-public class VanishNoPacketAPI {
+public abstract class VanishNoPacketAPI {
     private final PlayerHandler playerHandler;
 
     public VanishNoPacketAPI() {

@@ -19,5 +19,21 @@
 package org.kitteh.vanish.api.player;
 
 public enum Perm {
-    NOCHAT, NOINTERACT, NOTARGET, NOTRAMPLE;
+    CHAT("Sending messages in chat"),
+    CLICK("Left/right clicking"),
+    DAMAGE_GIVE("Hurt others"),
+    DAMAGE_RECEIVE("Be hurt by others"),
+    MOBTARGET("Mobs targeting"),
+    PRESSURE("Trigger pressure plates"),
+    TRAMPLE("Crops trampling");
+    
+    private String description;
+
+    private Perm(String description) {
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return this.description;
+    }
 }
