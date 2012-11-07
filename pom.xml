@@ -27,8 +27,8 @@
     </distributionManagement>
 
     <build>
-        <defaultGoal>clean package</defaultGoal>
-        <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
+        <defaultGoal>clean package install</defaultGoal>
+        <sourceDirectory>${basedir}/src/main/java/</sourceDirectory>
         <finalName>VanishNoPacketAPI</finalName>
         <resources>
             <resource>
